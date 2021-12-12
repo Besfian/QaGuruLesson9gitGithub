@@ -24,6 +24,5 @@ public class SoftAssertions {
         $(".markdown-body").shouldHave(text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
 
 
-//        sleep(5000);
     }
 }
