@@ -11,14 +11,9 @@ public class SoftAssertions {
     @Test
     void softAssertions() {
         open("https://github.com/search?q=selenide");
-
         $(byText("Wikis")).click();
-
         $("[title=SoftAssertions]").shouldHave(text("SoftAssertions"));
-
         $("[title=SoftAssertions]").click();
         $(".markdown-body").shouldHave(text("com.codeborne.selenide.junit5.SoftAssertsExtension"));
-
-
     }
 }
